@@ -68,14 +68,7 @@ ul li a:active{
     font-size: 100%;
     padding-top: 5%;
 }
-/* #first-page figure img{
-    width: 70%;
-    display: flex;
-    justify-self: flex-end;
-    height: fit-content;
-    padding-top: 15%;
-    
-} */
+
 .grey-text{
     color: #ccc;
     font-size: 120%;
@@ -87,14 +80,16 @@ figure{
      padding-left: 0;
  }
 .btn{
-    padding: 1.5% 2%;
+    padding: 3% 4%;
     margin: 5% 0;
-    font-size: 50%;
-    border-radius: 20px;
+    
+    border-radius: 15px;
     background-color: red;
     color: #fff;
-    font-weight: 600;
     border: 1px solid red;/*#6e18e9*/
+}
+.btn:hover{
+    background-color: rgb(143, 9, 9);
 }
 section#our-services{
     padding:5% 0px;
@@ -103,15 +98,14 @@ section#our-services #services{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    
+    justify-content: space-evenly;   
 }
 section#our-services #services .cards{
     text-align: center;
     width: 45%;
     margin: 15px 5px;
     border: none;
-    box-shadow: 1px 1px 10px 2px #eee;
+    box-shadow: 1px 1px 10px 2px #ddd;
     padding: 5px 0;
 }
 section#our-services #services .cards .card-logo{
@@ -120,8 +114,6 @@ section#our-services #services .cards .card-logo{
 }
 section#our-services #services .cards .card-logo i{
     border-radius: 50%;
-    /* height: 120px;
-    width: 120px; */
     border: 1px solid #eee;
     padding: 15px;
 }
@@ -129,25 +121,22 @@ section#our-services #services .cards .cards-title{
     font-size: 100%;
     overflow: hidden;
     padding: 0 5px;
-    font-weight: bolder;
-    
+    font-weight: bolder;  
 }
 section#our-services #services .cards .card-text{
     color: #bbb;  
+    padding: 0 10px;
 }
 .section-title{
     font-size: 220%;
-    text-align: center;
-    
+    text-align: center;   
     font-family: 'Oswald', sans-serif;
 }
 
 section#our-team{
-    background: #f9f9f9;
-    
+    background: #f9f9f9;   
 }
 span{
-    /* text-decoration: underline red; */
     padding-bottom: 5px;
     border-bottom: 1.5px solid rgba(255, 0, 0, 0.5);
 }
@@ -156,12 +145,12 @@ section#our-team div#team{
     display: flex;
     flex-wrap: wrap;
     padding:0 15px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-content: space-between;
 }
 div#team .team-member{
-    box-shadow: 1px 1px 10px 2px #eee;
-    border: 1px solid #ccc;
+    box-shadow: 1px 1px 10px 2px #ddd;
+    border: none;
     width: 45%;
     margin-bottom: 20px;
     background-color: #fff;
@@ -171,16 +160,15 @@ div#team .team-member{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding-bottom: 10px;
-    
+    padding: 10px;
+    text-align: center;
 }
 #our-team div#team .team-member figure img{
     width:100px;
     height: auto;
     margin-right: 15px;
     background-color: #ccc;
-    justify-content: flex-start;
-    
+    justify-content: flex-start;   
 }
 
 #our-team div#team .team-member figure figcaption{
@@ -224,9 +212,9 @@ section#pricing #pricing-tabs .tab{
     box-sizing: border-box;
     border: none;
     justify-content: center;
-    box-shadow: 1px 1px 30px 2px #eee;
-    min-width: 20%;
-    
+    box-shadow: 1px 1px 30px 2px #ddd;
+    width: 22%;
+    margin: 20px 0;
     padding-top: 5px;
     text-align: center;
 }
@@ -247,9 +235,6 @@ section#pricing #pricing-tabs .tab #middle i{
     background-color: red;
 }
 
-/* section#pricing #pricing-tabs .tab ul{
-    margin-left: -40px;
-} */
 section#pricing #pricing-tabs .tab ul .subscription{
     font-weight: 900;
 }
@@ -291,8 +276,7 @@ section#contact-us .contact-section form input{
     border: none;
     border-radius: 3px;
     width: 100%;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;  
 }
 section#contact-us .contact-section form #name-email{
     display: flex;
@@ -361,6 +345,7 @@ footer p#copyright span{
 }
 
 
+
 @media (max-width: 680px){
     #our-team div#team .team-member figure{
         display: block;
@@ -374,11 +359,16 @@ footer p#copyright span{
         padding: 5px 0px;
         text-align: center;
     }
+    section#pricing #pricing-tabs .tab, div#team .team-member, section#our-services #services .cards {
+        width: 70%;
+    }
     footer #footer-sections{
         display: block;
     }
     footer #footer-sections ul{
         width: 100%;
+        margin-left: 0;
         text-align: center;
     }
+    
 }
