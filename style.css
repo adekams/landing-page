@@ -1,0 +1,384 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+section{
+    padding: 5% 0px;
+}
+main #navbar{
+    width: 100%;
+    /* position: fixed; */
+    background-color: #fff;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+nav #logo, footer #logo{
+    font-size: 25px;
+    color: red;
+    margin-top: -15px;
+    padding: 0;
+}
+ul li{
+    list-style-type: none;
+    
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+ul li a{
+   text-decoration: none; 
+   color: #000;
+   font-size: 16px;
+}
+ul li a:hover{
+ color: #123;
+}
+ul li a:active{
+    color: red;
+}
+#first-page{
+    display: flex;
+    padding-left: 25px;
+    padding-bottom: 30px;
+    padding-top: 15%;
+    justify-content: space-between;
+    color: #fff;
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 100vh;
+    background: url('img/hacker-using-computer.jpg') fixed right no-repeat;
+    background-size: cover;
+    
+}
+#first-page #wordings{
+    border: none;
+    width: 70%;
+    font-size: 100%;
+    padding-top: 5%;
+}
+/* #first-page figure img{
+    width: 70%;
+    display: flex;
+    justify-self: flex-end;
+    height: fit-content;
+    padding-top: 15%;
+    
+} */
+.grey-text{
+    color: #ccc;
+    font-size: 120%;
+}
+figure{
+    margin: 0;
+}
+ ul{
+     padding-left: 0;
+ }
+.btn{
+    padding: 1.5% 2%;
+    margin: 5% 0;
+    font-size: 50%;
+    border-radius: 20px;
+    background-color: red;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid red;/*#6e18e9*/
+}
+section#our-services{
+    padding:5% 0px;
+}
+section#our-services #services{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+section#our-services #services .cards{
+    text-align: center;
+    width: 45%;
+    margin: 15px 5px;
+    border: none;
+    box-shadow: 1px 1px 10px 2px #eee;
+    padding: 5px 0;
+}
+section#our-services #services .cards .card-logo{
+    color: red;
+    font-size: 20px;
+}
+section#our-services #services .cards .card-logo i{
+    border-radius: 50%;
+    /* height: 120px;
+    width: 120px; */
+    border: 1px solid #eee;
+    padding: 15px;
+}
+section#our-services #services .cards .cards-title{
+    font-size: 100%;
+    overflow: hidden;
+    padding: 0 5px;
+    font-weight: bolder;
+    
+}
+section#our-services #services .cards .card-text{
+    color: #bbb;  
+}
+.section-title{
+    font-size: 220%;
+    text-align: center;
+    
+    font-family: 'Oswald', sans-serif;
+}
+
+section#our-team{
+    background: #f9f9f9;
+    
+}
+span{
+    /* text-decoration: underline red; */
+    padding-bottom: 5px;
+    border-bottom: 1.5px solid rgba(255, 0, 0, 0.5);
+}
+
+section#our-team div#team{
+    display: flex;
+    flex-wrap: wrap;
+    padding:0 15px;
+    justify-content: space-between;
+    align-content: space-between;
+}
+div#team .team-member{
+    box-shadow: 1px 1px 10px 2px #eee;
+    border: 1px solid #ccc;
+    width: 45%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    height: auto;
+}
+#our-team div#team .team-member figure{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    
+}
+#our-team div#team .team-member figure img{
+    width:100px;
+    height: auto;
+    margin-right: 15px;
+    background-color: #ccc;
+    justify-content: flex-start;
+    
+}
+
+#our-team div#team .team-member figure figcaption{
+    margin-right: 20px;
+    color: #bbb;
+    padding-right: 55px;
+    justify-content: flex-end;
+}
+#our-team div#team .team-member figure figcaption .member-name{
+    color: #000;
+    font-size: 110%;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+#our-team div#team .team-member figure figcaption .member-position{
+    color: #aaa;
+    margin-top: 2px;
+
+}
+
+#our-team div#team .team-member figure .social-media {
+    margin-bottom: -5px;
+    color: green;
+    font-size: 20px;
+    
+}
+#our-team div#team .team-member figure .social-media i{
+    padding: 0 2%;
+}
+
+section#pricing{
+    background-color: #fff;
+    padding-bottom: 80px;
+}
+section#pricing #pricing-tabs{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+section#pricing #pricing-tabs .tab{
+    box-sizing: border-box;
+    border: none;
+    justify-content: center;
+    box-shadow: 1px 1px 30px 2px #eee;
+    min-width: 20%;
+    
+    padding-top: 5px;
+    text-align: center;
+}
+section#pricing #pricing-tabs .tab .icon{
+    color: red;
+    font-size: 20px;  
+    text-align: center;   
+}
+section#pricing #pricing-tabs .tab .icon i{
+    border: none;
+    background-color: #eee;
+    border-radius: 50%;
+    padding: 16px;
+}
+
+section#pricing #pricing-tabs .tab #middle i{
+    color: white;
+    background-color: red;
+}
+
+/* section#pricing #pricing-tabs .tab ul{
+    margin-left: -40px;
+} */
+section#pricing #pricing-tabs .tab ul .subscription{
+    font-weight: 900;
+}
+section#pricing #pricing-tabs ul li .red{
+    color: red;
+    border: none;
+    font-size: 22px;
+}
+section#pricing #pricing-tabs #tab2{
+    box-shadow: 1px 1px 10px 5px #eee;
+}
+
+section#contact-us{
+    background-color: #f9f9f9;
+    padding: 30px 0;
+}
+section#contact-us .contact-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+section#contact-us .contact-section #map{
+    padding-right: 20px;
+    width: 30%;
+}
+section#contact-us .contact-section #map iframe{
+    width: 100%;
+}
+section#contact-us .contact-section form{
+    justify-self: flex-start;
+    width: 55%;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+section#contact-us .contact-section form input{
+    box-sizing: border-box;
+    padding: 7px;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+section#contact-us .contact-section form #name-email{
+    display: flex;
+    justify-content: space-between;
+}
+section#contact-us .contact-section form #name, section#contact-us .contact-section form #mail{
+    width: 47%;   
+}
+section#contact-us .contact-section form textarea{
+    color: red;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding-top: 30px;
+    
+}
+footer #footer-sections{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    width: 100%;
+    
+}
+footer #footer-sections ul{
+    margin-left: -20px;
+    width: 20%;
+    border: none; 
+}
+footer #footer-sections #sect1{
+    margin-left: 0;
+    margin-top: 30px;
+}
+footer #footer-sections #sect1 #description, footer #footer-sections #sect4{
+    line-height: 1.5;
+}
+footer #footer-sections .sect-title{
+    font-size: 110%;
+    font-weight: 900;
+}
+footer .social-media{
+    margin-left: 10px;
+}
+footer .social-media i{
+    color: black;
+    margin-right: 20px;
+}
+footer hr{
+    margin: 0 20px;
+    border: 1px solid #ddd;
+}
+footer p#copyright{
+    text-align: center;
+    padding: 10px 0;
+}
+footer p#copyright span{
+    color: red;
+}
+
+
+@media (max-width: 680px){
+    #our-team div#team .team-member figure{
+        display: block;
+        width: 100%; 
+    }
+    #our-team div#team .team-member figure img{
+        text-align: center; 
+
+    }
+    #our-team div#team .team-member figure figcaption{
+        padding: 5px 0px;
+        text-align: center;
+    }
+    footer #footer-sections{
+        display: block;
+    }
+    footer #footer-sections ul{
+        width: 100%;
+        text-align: center;
+    }
+}
