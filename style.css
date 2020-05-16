@@ -1,77 +1,65 @@
-body{
+
+html, body{
     margin: 0;
     padding: 0;
-    width: 100%;
+    max-width: 100%;
+    font-family: 'open sans', sans-serif;
     overflow-x: hidden;
     box-sizing: border-box;
+    outline: rgba(255, 0, 0, 0.3) solid 1px;
 }
+
 section{
     padding: 5% 0px;
 }
 main #navbar{
     width: 100%;
-    /* position: fixed; */
     background-color: #fff;
 }
 nav{
     display: flex;
     justify-content: space-between;
-   
+   margin: 10px 50px;
 }
 
 nav ul{
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+    /* width: 40%; */
 }
 nav #logo, footer #logo{
-    font-size: 25px;
+    font-size: 220%;
     color: red;
-    margin-top: -15px;
+    margin: 0;
     padding: 0;
 }
+
 ul li{
     list-style-type: none;
-    
     padding: 5px 10px;
     cursor: pointer;
     font-size: 15px;
+}
+ul li a:hover{
+    color: red;
+    padding-bottom: 10px;
+    border-bottom: 1px solid red;
 }
 ul li a{
    text-decoration: none; 
    color: #000;
    font-size: 16px;
 }
-ul li a:hover{
- color: #123;
-}
+
 ul li a:active{
     color: red;
-}
-#first-page{
-    display: flex;
-    padding-left: 25px;
-    padding-bottom: 30px;
-    padding-top: 15%;
-    justify-content: space-between;
-    color: #fff;
-    background-color: #f9f9f9;
-    width: 100%;
-    height: 100vh;
-    background: url('img/hacker-using-computer.jpg') fixed right no-repeat;
-    background-size: cover;
-    
-}
-#first-page #wordings{
-    border: none;
-    width: 70%;
-    font-size: 100%;
-    padding-top: 5%;
 }
 
 .grey-text{
     color: #ccc;
     font-size: 120%;
+    font-weight: 400;
 }
 figure{
     margin: 0;
@@ -79,17 +67,67 @@ figure{
  ul{
      padding-left: 0;
  }
+ .cards-title{
+    font-size: 100%;
+    padding: 0 5px;
+    font-weight: bolder;  
+}
 .btn{
-    padding: 3% 4%;
+    padding: 4% 9%;
     margin: 5% 0;
-    
-    border-radius: 15px;
+    font-size: 80%;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-right: 15px;
+    text-transform: uppercase;
     background-color: red;
     color: #fff;
-    border: 1px solid red;/*#6e18e9*/
+    border: 1px solid red;
+}
+
+.section-title{
+    font-size: 180%;
+    margin-bottom: 7%;
+    text-align: center;   
+    font-family: 'Arvo', sans-serif;
+    font-weight: 600;
+}
+
+section#first-page{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#first-page #intro{
+    width: 50%;
+}
+#first-page #intro #heading{
+    font-family: arvo, serif;
+    font-weight: 900;
+    font-size: 250%;
+}
+#first-page #intro p{
+    font-family: 'open sans', sans-serif;
+}
+#first-page #intro-img{
+    width: 45%;
+}
+#first-page #intro-img img{
+    width: 100%;
+}
+
+#first-page .two-btns #white-btn{
+    background-color: #fff;
+    color: red;
+    cursor: pointer;
+}
+#first-page .two-btns #white-btn:hover{
+    background-color: red;
+    color: #fff;
 }
 .btn:hover{
-    background-color: rgb(143, 9, 9);
+    background-color:#fff;
+    color: red;
 }
 section#our-services{
     padding:5% 0px;
@@ -102,9 +140,10 @@ section#our-services #services{
 }
 section#our-services #services .cards{
     text-align: center;
-    width: 45%;
+    width: 30%;
     margin: 15px 5px;
-    border: none;
+    cursor: pointer;
+    border: 1px solid #eee;
     box-shadow: 1px 1px 10px 2px #ddd;
     padding: 5px 0;
 }
@@ -117,21 +156,83 @@ section#our-services #services .cards .card-logo i{
     border: 1px solid #eee;
     padding: 15px;
 }
-section#our-services #services .cards .cards-title{
-    font-size: 100%;
-    overflow: hidden;
-    padding: 0 5px;
-    font-weight: bolder;  
-}
+
 section#our-services #services .cards .card-text{
     color: #bbb;  
     padding: 0 10px;
 }
-.section-title{
-    font-size: 220%;
-    text-align: center;   
-    font-family: 'Oswald', sans-serif;
+
+#stat-page{
+    display: flex;
+    padding: 5% 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    background-color: #f9f9f9;
+    width: 100%;
+    height: auto;  
 }
+#stat-page #wordings{
+    border: none;
+    width: 55%;
+    font-size: 100%;
+    padding-top: 5%;
+}
+#stat-page figure{
+    width: 45%;
+}
+#stat-page figure img{
+    width: 90%;
+    height: 100%;
+}
+
+
+section#awesome-features{
+    outline: none;
+}
+#features{
+    padding: 50px 20px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#features .awesome{
+    width: 22%;
+}
+#features .awesome .awe-cards{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid #eee;
+    margin: 20px 2px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 2px #ddd;
+}
+#features .awesome .awe-cards i{
+    color: red;
+    font-size: 20px;
+    padding: 2px 10px;
+}
+#features #left{
+    text-align: right;
+    margin-left: -360px;
+}
+
+#features #middle{
+    width: 20%;/*25%*/
+    /* padding: 20px; */
+    margin-left: -380px;
+    /* background-color: red;  */
+}
+#features #right{
+    margin-right: -360px;
+}
+
+#features #middle .mobile{
+    width: 10%; 
+}
+
 
 section#our-team{
     background: #f9f9f9;   
@@ -150,12 +251,14 @@ section#our-team div#team{
 }
 div#team .team-member{
     box-shadow: 1px 1px 10px 2px #ddd;
-    border: none;
+    border: 1px solid #eee;
     width: 45%;
+    cursor: pointer;
     margin-bottom: 20px;
     background-color: #fff;
     height: auto;
 }
+
 #our-team div#team .team-member figure{
     display: flex;
     width: 100%;
@@ -175,6 +278,7 @@ div#team .team-member{
     margin-right: 20px;
     color: #bbb;
     padding-right: 55px;
+    text-align: left;
     justify-content: flex-end;
 }
 #our-team div#team .team-member figure figcaption .member-name{
@@ -197,6 +301,7 @@ div#team .team-member{
 }
 #our-team div#team .team-member figure .social-media i{
     padding: 0 2%;
+    cursor: pointer;
 }
 
 section#pricing{
@@ -210,10 +315,11 @@ section#pricing #pricing-tabs{
 }
 section#pricing #pricing-tabs .tab{
     box-sizing: border-box;
-    border: none;
+    border: 1px solid #eee;
     justify-content: center;
     box-shadow: 1px 1px 30px 2px #ddd;
     width: 22%;
+    cursor: pointer;
     margin: 20px 0;
     padding-top: 5px;
     text-align: center;
@@ -233,7 +339,12 @@ section#pricing #pricing-tabs .tab .icon i{
 section#pricing #pricing-tabs .tab #middle i{
     color: white;
     background-color: red;
+    
 }
+section#pricing #pricing-tabs .tab #middle:hover{
+    box-shadow: 2px 2px 10px 5px #ccc;
+}
+
 
 section#pricing #pricing-tabs .tab ul .subscription{
     font-weight: 900;
@@ -246,6 +357,7 @@ section#pricing #pricing-tabs ul li .red{
 section#pricing #pricing-tabs #tab2{
     box-shadow: 1px 1px 10px 5px #eee;
 }
+
 
 section#contact-us{
     background-color: #f9f9f9;
@@ -262,6 +374,7 @@ section#contact-us .contact-section #map{
 }
 section#contact-us .contact-section #map iframe{
     width: 100%;
+    cursor: pointer;
 }
 section#contact-us .contact-section form{
     justify-self: flex-start;
@@ -294,6 +407,10 @@ section#contact-us .contact-section form textarea{
     width: 100%;
 }
 
+
+div#team .team-member:hover, section#our-services #services .cards:hover, section#pricing #pricing-tabs .tab:hover, #features .awesome .awe-cards:hover{
+    box-shadow: 2px 2px 10px 5px #ccc;
+}
 
 footer{
     position: relative;
@@ -331,6 +448,7 @@ footer .social-media{
 footer .social-media i{
     color: black;
     margin-right: 20px;
+    cursor: pointer;
 }
 footer hr{
     margin: 0 20px;
@@ -342,6 +460,7 @@ footer p#copyright{
 }
 footer p#copyright span{
     color: red;
+    cursor: pointer;
 }
 
 
@@ -360,15 +479,54 @@ footer p#copyright span{
         text-align: center;
     }
     section#pricing #pricing-tabs .tab, div#team .team-member, section#our-services #services .cards {
-        width: 70%;
+        width: 85%;
     }
     footer #footer-sections{
-        display: block;
+        display: block;  
+    }
+    footer span{
+        border-bottom: none;
     }
     footer #footer-sections ul{
         width: 100%;
-        margin-left: 0;
-        text-align: center;
+        margin-left: 10px;
+        text-align: left;
     }
-    
+    /* #stat-page{
+        margin: 0;
+    } */
+    #stat-page #wordings, #first-page #intro, #features .awesome{
+        width: 80%;
+    }
+    section#contact-us .contact-section #map, section#contact-us .contact-section form{
+        width: 80%;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+    #features #left, #features #right{
+        margin: 0;
+    }
+    #features #middle{
+        width: auto;
+        padding-top: 30px;
+        margin: 0;
+        /* margin-right: -660px;margin-left: -800px; */
+       display: block;
+    }
+    #features #middle #mobile{
+        width: 100%;
+    } 
+     #stat-page figure, #first-page #intro-img{
+        width: 95%;
+        margin-top: 10%;
+        
+    }
+    section#features{
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+    #first-page #intro #heading{
+        font-size: 140%;
+    }
 }
