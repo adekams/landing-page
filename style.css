@@ -3,7 +3,8 @@ html, body{
     margin: 0;
     padding: 0;
     max-width: 100%;
-    font-family: 'open sans', sans-serif;
+    font-family: 'Arvo', serif;
+    
     overflow-x: hidden;
     box-sizing: border-box;
     outline: rgba(255, 0, 0, 0.3) solid 1px;
@@ -15,6 +16,7 @@ section{
 main #navbar{
     width: 100%;
     background-color: #fff;
+    font-family: 'open sans', sans-serif;
 }
 nav{
     display: flex;
@@ -30,7 +32,8 @@ nav ul{
 }
 nav #logo, footer #logo{
     font-size: 220%;
-    color: red;
+    font-weight: 900;
+    color: #f63955;
     margin: 0;
     padding: 0;
 }
@@ -42,9 +45,9 @@ ul li{
     font-size: 15px;
 }
 ul li a:hover{
-    color: red;
+    color: #f63955;
     padding-bottom: 10px;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #f63955;
 }
 ul li a{
    text-decoration: none; 
@@ -53,13 +56,13 @@ ul li a{
 }
 
 ul li a:active{
-    color: red;
+    color: #f63955;
 }
 
 .grey-text{
+    font-family: 'Open Sans', sans-serif;
     color: #ccc;
-    font-size: 120%;
-    font-weight: 400;
+    font-size: 110%;
 }
 figure{
     margin: 0;
@@ -68,21 +71,23 @@ figure{
      padding-left: 0;
  }
  .cards-title{
+    font-family: 'Arvo', serif;
     font-size: 100%;
     padding: 0 5px;
     font-weight: bolder;  
 }
 .btn{
-    padding: 4% 9%;
+    padding: 10px 30px; /* 4% 9%*/
     margin: 5% 0;
-    font-size: 80%;
+    font-size: 14px;
+    font-family: 'open sans', sans-serif;
     cursor: pointer;
     border-radius: 30px;
     margin-right: 15px;
     text-transform: uppercase;
-    background-color: red;
+    background-color: #f63955;
     color: #fff;
-    border: 1px solid red;
+    border: 1px solid #f63955;
 }
 
 .section-title{
@@ -118,16 +123,16 @@ section#first-page{
 
 #first-page .two-btns #white-btn{
     background-color: #fff;
-    color: red;
+    color: #f63955;
     cursor: pointer;
 }
 #first-page .two-btns #white-btn:hover{
-    background-color: red;
+    background-color: #f63955;
     color: #fff;
 }
 .btn:hover{
     background-color:#fff;
-    color: red;
+    color: #f63955;
 }
 section#our-services{
     padding:5% 0px;
@@ -148,7 +153,7 @@ section#our-services #services .cards{
     padding: 5px 0;
 }
 section#our-services #services .cards .card-logo{
-    color: red;
+    color: #f63955;
     font-size: 20px;
 }
 section#our-services #services .cards .card-logo i{
@@ -210,23 +215,16 @@ section#awesome-features{
     box-shadow: 1px 1px 10px 2px #ddd;
 }
 #features .awesome .awe-cards i{
-    color: red;
+    color: #f63955;
     font-size: 20px;
     padding: 2px 10px;
 }
 #features #left{
     text-align: right;
-    margin-left: -360px;
 }
 
 #features #middle{
-    width: 20%;/*25%*/
-    /* padding: 20px; */
-    margin-left: -380px;
-    /* background-color: red;  */
-}
-#features #right{
-    margin-right: -360px;
+    width: 55%;/*25%*/
 }
 
 #features #middle .mobile{
@@ -239,7 +237,7 @@ section#our-team{
 }
 span{
     padding-bottom: 5px;
-    border-bottom: 1.5px solid rgba(255, 0, 0, 0.5);
+    border-bottom: 1.5px solid #f63955;
 }
 
 section#our-team div#team{
@@ -263,11 +261,10 @@ div#team .team-member{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 10px;
     text-align: center;
 }
 #our-team div#team .team-member figure img{
-    width:100px;
+    width:180px;
     height: auto;
     margin-right: 15px;
     background-color: #ccc;
@@ -277,7 +274,8 @@ div#team .team-member{
 #our-team div#team .team-member figure figcaption{
     margin-right: 20px;
     color: #bbb;
-    padding-right: 55px;
+    padding: 15px ;
+    /* padding-right: 55px; */
     text-align: left;
     justify-content: flex-end;
 }
@@ -286,6 +284,9 @@ div#team .team-member{
     font-size: 110%;
     font-weight: bold;
     margin-bottom: 0;
+}
+#our-team div#team .team-member figure figcaption .member-name:hover{
+    color: #f63955;
 }
 #our-team div#team .team-member figure figcaption .member-position{
     color: #aaa;
@@ -318,14 +319,16 @@ section#pricing #pricing-tabs .tab{
     border: 1px solid #eee;
     justify-content: center;
     box-shadow: 1px 1px 30px 2px #ddd;
-    width: 22%;
+    width: 28%;
     cursor: pointer;
     margin: 20px 0;
-    padding-top: 5px;
+    padding-top: 30px;
+    line-height: 1.5;
     text-align: center;
 }
+
 section#pricing #pricing-tabs .tab .icon{
-    color: red;
+    color: #f63955;
     font-size: 20px;  
     text-align: center;   
 }
@@ -338,7 +341,7 @@ section#pricing #pricing-tabs .tab .icon i{
 
 section#pricing #pricing-tabs .tab #middle i{
     color: white;
-    background-color: red;
+    background-color: #f63955;
     
 }
 section#pricing #pricing-tabs .tab #middle:hover{
@@ -349,8 +352,8 @@ section#pricing #pricing-tabs .tab #middle:hover{
 section#pricing #pricing-tabs .tab ul .subscription{
     font-weight: 900;
 }
-section#pricing #pricing-tabs ul li .red{
-    color: red;
+section#pricing #pricing-tabs ul li i{
+    color: #f63955;
     border: none;
     font-size: 22px;
 }
@@ -358,6 +361,60 @@ section#pricing #pricing-tabs #tab2{
     box-shadow: 1px 1px 10px 5px #eee;
 }
 
+section#testimonials{
+    outline: none;
+}
+
+section#testimonials .testi-section .free{
+    font-family: 'Arvo', serif;
+    font-size: 140%;
+    padding: 0 10px;
+}
+section#testimonials .testi-section .trial{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+section#testimonials .testi-section .trial #free-trial{
+    width: 60%;
+}
+section#testimonials .testi-section .trial #side-btn{
+    padding: 10px 30px;
+    
+    height: 40px;
+}
+section#testimonials .test-card{
+    padding: 50px 0;
+    background-color: #f63854;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+}
+
+section#testimonials .test-card .fig{
+    text-align: center;
+    width: 28%;
+    padding: 15px 2px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: none;
+    font-family: 'open sans', sans-serif;
+    border-radius: 5px;
+}
+section#testimonials .test-card .fig .name{
+    font-family: 'Arvo', serif;
+}
+section#testimonials .test-card .fig img{
+    margin: 5px 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+section#testimonials .test-card .fig figcaption .star i{
+    color: #f63854;
+    font-size: 14px;
+}
 
 section#contact-us{
     background-color: #f9f9f9;
@@ -366,11 +423,11 @@ section#contact-us{
 section#contact-us .contact-section{
     display: flex;
     flex-wrap: wrap;
+    padding: 0 30px;
     justify-content: space-between;
 }
 section#contact-us .contact-section #map{
-    padding-right: 20px;
-    width: 30%;
+    width: 40%;
 }
 section#contact-us .contact-section #map iframe{
     width: 100%;
@@ -379,7 +436,6 @@ section#contact-us .contact-section #map iframe{
 section#contact-us .contact-section form{
     justify-self: flex-start;
     width: 55%;
-    padding-left: 20px;
     box-sizing: border-box;
 }
 section#contact-us .contact-section form input{
@@ -399,7 +455,7 @@ section#contact-us .contact-section form #name, section#contact-us .contact-sect
     width: 47%;   
 }
 section#contact-us .contact-section form textarea{
-    color: red;
+    color: #f63955;
     border: none;
     border-radius: 3px;
     font-size: 14px;
@@ -413,6 +469,7 @@ div#team .team-member:hover, section#our-services #services .cards:hover, sectio
 }
 
 footer{
+    font-family: 'open sans', sans-serif;
     position: relative;
     bottom: 0;
     left: 0;
@@ -422,6 +479,7 @@ footer{
 footer #footer-sections{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: stretch;
     width: 100%;
     
@@ -459,27 +517,52 @@ footer p#copyright{
     padding: 10px 0;
 }
 footer p#copyright span{
-    color: red;
+    color: #f63955;
     cursor: pointer;
 }
 
+@media (max-width: 980px){
+    section#our-services #services .cards, section#pricing #pricing-tabs .tab, footer #footer-sections ul{
+        width: 42%;
+    }
+    section#contact-us .contact-section #map, section#contact-us .contact-section form{
+        width: 90%;
+        margin: 10px auto;
+    }
 
+    #features #middle{
+        width: 100%;
+        text-align: center;
+        padding-top: 40px;
+    }
+    
+    #features #left, #features #right, #features #middle{
+        margin: 0;
+    }
+    div#team .team-member, #features .awesome{
+        width: 680px;
+    } 
 
-@media (max-width: 680px){
+}
+
+@media (max-width: 760px){
     #our-team div#team .team-member figure{
         display: block;
         width: 100%; 
     }
     #our-team div#team .team-member figure img{
-        text-align: center; 
+        display: flex; 
+        margin: 0;
+        width: 90%;
+        text-align: left;
 
     }
     #our-team div#team .team-member figure figcaption{
-        padding: 5px 0px;
-        text-align: center;
+        padding: 5px 20px;
+        text-align: left;
     }
-    section#pricing #pricing-tabs .tab, div#team .team-member, section#our-services #services .cards {
-        width: 85%;
+    section#pricing #pricing-tabs .tab, div#team .team-member, section#our-services #services .cards{
+        width: 80%;
     }
     footer #footer-sections{
         display: block;  
@@ -487,21 +570,20 @@ footer p#copyright span{
     footer span{
         border-bottom: none;
     }
-    footer #footer-sections ul{
-        width: 100%;
-        margin-left: 10px;
+    footer #footer-sections ul, footer #footer-sections #sect1{
+        width: 95%;
+        margin-left: 10%;
         text-align: left;
     }
     /* #stat-page{
         margin: 0;
     } */
-    #stat-page #wordings, #first-page #intro, #features .awesome{
+    #stat-page #wordings, section#testimonials .test-card .fig, #first-page #intro, #features .awesome{
         width: 80%;
     }
-    section#contact-us .contact-section #map, section#contact-us .contact-section form{
-        width: 80%;
+    section#contact-us .contact-section #map, section#contact-us .contact-section form, section#testimonials .testi-section .trial #free-trial{
+        width: 90%;
         margin-bottom: 20px;
-        margin-left: 20px;
     }
     #features #left, #features #right{
         margin: 0;
