@@ -3,11 +3,25 @@ html, body{
     margin: 0;
     padding: 0;
     max-width: 100%;
-    font-family: 'Arvo', serif;
-    
+    font-family: 'open sans', sans-serif;
     overflow-x: hidden;
     box-sizing: border-box;
     outline: rgba(255, 0, 0, 0.3) solid 1px;
+}
+
+.arrow-up{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.arrow-up a i{
+    color: #f63854;
+    cursor: pointer;
+    font-size: 200%;
+    padding: 20px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #eee
 }
 
 section{
@@ -61,8 +75,8 @@ ul li a:active{
 
 .grey-text{
     font-family: 'Open Sans', sans-serif;
-    color: #ccc;
-    font-size: 110%;
+    color: #abacae;
+    font-size: 14px;
 }
 figure{
     margin: 0;
@@ -72,9 +86,9 @@ figure{
  }
  .cards-title{
     font-family: 'Arvo', serif;
+    color: #333;
     font-size: 100%;
-    padding: 0 5px;
-    font-weight: bolder;  
+    padding: 0 5px; 
 }
 .btn{
     padding: 10px 30px; /* 4% 9%*/
@@ -93,6 +107,7 @@ figure{
 .section-title{
     font-size: 180%;
     margin-bottom: 7%;
+    color: #333;
     text-align: center;   
     font-family: 'Arvo', sans-serif;
     font-weight: 600;
@@ -126,7 +141,7 @@ section#first-page{
     color: #f63955;
     cursor: pointer;
 }
-#first-page .two-btns #white-btn:hover{
+#first-page .two-btns #white-btn:hover, .arrow-up a i:hover{
     background-color: #f63955;
     color: #fff;
 }
@@ -180,8 +195,11 @@ section#our-services #services .cards .card-text{
 #stat-page #wordings{
     border: none;
     width: 55%;
-    font-size: 100%;
+    font-size: 14px;
     padding-top: 5%;
+}
+#stat-page #wordings h2{
+    font-family: 'Arvo', serif;
 }
 #stat-page figure{
     width: 45%;
@@ -209,7 +227,7 @@ section#awesome-features{
     display: flex;
     justify-content: space-evenly;
     border: 1px solid #eee;
-    margin: 20px 2px;
+    margin: 15px 5px;
     padding: 10px;
     cursor: pointer;
     box-shadow: 1px 1px 10px 2px #ddd;
@@ -252,7 +270,7 @@ div#team .team-member{
     border: 1px solid #eee;
     width: 45%;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     background-color: #fff;
     height: auto;
 }
@@ -265,7 +283,7 @@ div#team .team-member{
 }
 #our-team div#team .team-member figure img{
     width:180px;
-    height: auto;
+    height: 280px;
     margin-right: 15px;
     background-color: #ccc;
     justify-content: flex-start;   
@@ -274,15 +292,16 @@ div#team .team-member{
 #our-team div#team .team-member figure figcaption{
     margin-right: 20px;
     color: #bbb;
-    padding: 15px ;
+    padding: 15px 0;
+    font-family: 'open sans', san-serif;
     /* padding-right: 55px; */
     text-align: left;
     justify-content: flex-end;
 }
 #our-team div#team .team-member figure figcaption .member-name{
     color: #000;
+    font-family: 'Arvo', serif;
     font-size: 110%;
-    font-weight: bold;
     margin-bottom: 0;
 }
 #our-team div#team .team-member figure figcaption .member-name:hover{
@@ -290,12 +309,12 @@ div#team .team-member{
 }
 #our-team div#team .team-member figure figcaption .member-position{
     color: #aaa;
-    margin-top: 2px;
-
+    margin-top: 10px;
+    font-weight: 600;
 }
 
 #our-team div#team .team-member figure .social-media {
-    margin-bottom: -5px;
+    margin-bottom: 5px;
     color: green;
     font-size: 20px;
     
@@ -338,7 +357,16 @@ section#pricing #pricing-tabs .tab .icon i{
     border-radius: 50%;
     padding: 16px;
 }
-
+section#pricing #pricing-tabs .tab .price{
+    font-family: 'open sans', san-serif;
+}
+section#pricing span{
+    
+    font-weight: 700;
+    font-size: 135%;
+    color: #f63955;
+    border-bottom: none;
+}
 section#pricing #pricing-tabs .tab #middle i{
     color: white;
     background-color: #f63955;
@@ -350,7 +378,7 @@ section#pricing #pricing-tabs .tab #middle:hover{
 
 
 section#pricing #pricing-tabs .tab ul .subscription{
-    font-weight: 900;
+    font-family: 'Arvo', serif;
 }
 section#pricing #pricing-tabs ul li i{
     color: #f63955;
@@ -368,12 +396,14 @@ section#testimonials{
 section#testimonials .testi-section .free{
     font-family: 'Arvo', serif;
     font-size: 140%;
-    padding: 0 10px;
+    padding-top: 30px;
+    margin: 0 30px;
 }
 section#testimonials .testi-section .trial{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 10px 30px;
     padding: 0 10px;
 }
 section#testimonials .testi-section .trial #free-trial{
@@ -381,7 +411,7 @@ section#testimonials .testi-section .trial #free-trial{
 }
 section#testimonials .testi-section .trial #side-btn{
     padding: 10px 30px;
-    
+    margin: 0;
     height: 40px;
 }
 section#testimonials .test-card{
@@ -553,12 +583,13 @@ footer p#copyright span{
     #our-team div#team .team-member figure img{
         display: flex; 
         margin: 0;
-        width: 90%;
+        width: 100%;
+        height: auto;
         text-align: left;
 
     }
     #our-team div#team .team-member figure figcaption{
-        padding: 5px 20px;
+        padding: 5px 25px;
         text-align: left;
     }
     section#pricing #pricing-tabs .tab, div#team .team-member, section#our-services #services .cards{
